@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Course - Js Basics</title>
+    <link rel="stylesheet" href="JsCourse\css\jscourse.css" />
+    <link rel="stylesheet" href="home\style.css" />
+    <link rel="stylesheet" href="JsCourse\css\jsconsole.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/base16/hardcore.min.css"
+    />
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">Courses</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <nav class="vertical-menu-wrapper">
+      <div class="vertical-menu-logo">
+        <div>JavaScript</div>
+      </div>
+      <ul class="vertical-menu">
+        <h6>Introduction</h6>
+        <hr />
+        <a href="jscourse.html">Before you Start</a>
+        <br />
+        <h6>Js Basics</h6>
+        <hr />
+        <a href="jshistory.html">Js History</a>
+        <a href="jshello.html">Hello World!</a>
+        <a href="jsconsole.html">Exploring Console</a>
+        <a href="jsvariables.html">Values & Variables</a>
+        <a class="active" href="">Data Types</a>
+        <a href="">let / var / const</a>
+        <a href="">Scope</a>
+        <a href="">Operators</a>
+        <a class="challenge" href="">Coding Challenge #1</a>
+        <a href="">Strings</a>
+        <a href="">Template Literals</a>
+        <a href="">if / else / else if</a>
+        <a class="challenge" href="">Coding Challenge #2</a>
+        <a href="">Type Conversion / Coersion</a>
+        <a href="">True / False Values</a>
+        <a href="">Types of Equality Operators</a>
+        <a href="">Boolean Logic</a>
+        <a class="challenge" href="">Coding Challenge #3</a>
+        <a href="">Switch Case</a>
+        <a href="">Expressions | Statements</a>
+        <a href="">Ternary Operator</a>
+        <a class="challenge" href="">Coding Challenge #4</a>
+        <a href="">Strict Mode</a>
+        <a href="">Functions</a>
+        <a class="challenge" href="">Coding Challenge #5</a>
+        <a href="">Data Structures in Js</a>
+        <a href="">Arrays</a>
+        <a class="challenge" href="">Coding Challenge #6</a>
+        <a href="">Objects</a>
+        <a class="challenge" href="">Coding Challenge #7</a>
+        <a href="">Loops</a>
+        <a href="">break / continue</a>
+        <a class="challenge" href="">Coding Challenge #8</a>
+        <br />
+        <h6>Project #1</h6>
+        <hr />
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </ul>
+    </nav>
+
+    <div class="content-wrapper">
+      <div class="start">
+        <img src="img/pngwing.com.png" alt="" />
+        <div class="sub_start">
+          <h2>Basics</h2>
+          <p>Data Types</p>
+        </div>
+      </div>
+      <div class="content_material">
+        <p>Values are of two types -</p>
+
+        <img src="img\Screenshot 2022-08-15 010556.png" alt="" />
+        <br />
+        <p>Primitive Value -</p>
+
+        <pre>
+            <code class="editor editor_datatype" class="JavaScript">
+let mark='web developer';
+            </code>
+        </pre>
+        <p>
+          Here 'web developer' is a value which is termed as primitive. <br />
+          Object Value -
+        </p>
+        <pre>
+            <code class="editor editor_datatype" class="JavaScript">
+let profession = {
+    mark:'web developer'
+};
+            </code>
+        </pre>
+        <p>
+          Here 'web developer' is an object value. We will study about objects
+          in later sections.
+        </p>
+        <br />
+        <br />
+        <p>
+          Data type, in programming, defines which type of value a variable
+          contains. In a way it defines the type of data a variable has. <br />
+          In other programming languages, data types are defined for variables,
+          like we say that this is an integer type variable which means that
+          particular variable is storing an integer. But in JavaScript, data
+          types are defined for values. Here we say that this variable is
+          containing a value of integer type. <br />
+          It is a little confusing but i hope you understood what i was trying
+          to say.
+        </p>
+        <br />
+        <img src="img/Types-of-data-types-in-JS.jpg" alt="" /> <br />
+        <p>
+          Here we will study primitive data types. We will see non-primitive
+          data types in later sections. <br />
+          <br />
+          String : Sequence of characters
+        </p>
+        <pre>
+            <code class="editor " class="JavaScript">
+let name='Mark';
+            </code>
+        </pre>
+        <p>Number : Used for decimals and integers</p>
+        <pre>
+            <code class="editor " class="JavaScript">
+let age=30;
+            </code>
+        </pre>
+        <p>Boolean : Logical type that can only be true or false</p>
+        <pre>
+            <code class="editor " class="JavaScript">
+let married=true;
+            </code>
+        </pre>
+        <p>Null : Also means empty value</p>
+        <pre>
+            <code class="editor " class="JavaScript">
+let kids=null;
+            </code>
+        </pre>
+        <p>Undefined : Value taken by a variable that is not yet deifined</p>
+        <pre>
+            <code class="editor " class="JavaScript">
+let name;
+            </code>
+        </pre>
+        <br /><br />
+        <p>
+          There are two more types of primitive data types issued in modern
+          JavaScript - <br /><br />
+        </p>
+        <p>Symbol (ES 2015) : Value that is unique and cannot be changed</p>
+        <pre>
+            <code class="editor editor_datatype" class="JavaScript">
+const name1=Symbol('Mark');
+const name2=Symbol('Mark');
+            </code>
+        </pre>
+        <p>name1 and name2 are not equal.</p>
+        <br />
+        <p>BigInt (ES 2020) : Larger integers than the Number type can hold</p>
+        <br /><br />
+        <p>
+          In next section we learn about these tags that we are using before
+          defining a variable.
+        </p>
+        <br /><br />
+        <p>
+          Till then, <br />Keep Learning! <br />
+          Keep Exploring!
+        </p>
+
+        <br /><br /><br /><br /><br />
+      </div>
+    </div>
+    <script src="home\script.js"></script>
+  </body>
+</html>
